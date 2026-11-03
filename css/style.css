@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #242327;
+    width: 100%;
+}
+
+.titulo {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    font-size: 3rem;
+    color: #fff;
+    text-align: left;
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+
+
+p {
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-guntur-light {
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-guntur-bold{
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+section{
+    margin: 2em 0;
+}
+#sobre-mim, #trajetoria{
+    margin: 4em 2em 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    padding: 2.6em 6em;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+#sobre-mim > .conteudo{
+    display: grid;
+    grid-template-columns: 20% auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5em;
+}
+img{
+    width: 100%;
+}
+.foto-perfil{
+    border-radius: 50%;
+}
+
+#trajetoria > .conteudo{
+    display: grid;
+    grid-template-columns: 25% auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+.desc-aprendizado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-radius: 1em;
+    background-color: #101b20;
+    gap: 2em;
+    padding: 1em 2em;
+    margin: 2em;
+}
+.desc-aprendizado p{
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.desc-aprendizado button{
+    background-color: aliceblue;
+    font-weight: 700;
+    font-size: 1em;
+    color: black;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.6em;
+    cursor: pointer;
+    width: 50%;
+    text-transform: uppercase;
+}
+.tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15px, 100px));
+    row-gap: 1em;
+    column-gap: 4em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.tec{
+    width: 100%;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 300px));
+    row-gap: 2em;
+    column-gap: 1em;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.projeto{
+    background-color: #023147;
+    border-radius: 1em;
+    overflow: hidden;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+.projeto-conteudo{
+    background-color: #101b20;
+    border-radius: 1em;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+.projeto-conteudo .projeto-img{
+    padding: 5em;
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    aspect-ratio: 2 / 1;
+}
+.projeto-nome{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+}
+.projeto-desc{
+    text-align: justify;
+    margin: 0 1em;
+    flex: 1;
+}
+.projeto hr{
+    background-color: #023147;
+    border: none;
+    border-color: #023147;
+    margin: 0.4em 1.5em 0.5em 1.5em;
+    padding-top: 0.2em;
+    border-radius: 50px;
+}
+.projeto-tecs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    margin: 0.1em 0;
+}
+.projeto .tec {
+    width: 13%;
+}
+.projeto > p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400; 
+}
+.projeto-plataformas{
+    background-color: #023147;
+}
