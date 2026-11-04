@@ -32,14 +32,14 @@
         <nav>
             <ul>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
-                <li><a href="#trajetoria">Trajetória</a></li>
                 <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#projetos">Destaques</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#projetos">Projetos</a></li>
             </ul>
         </nav>
     </header>
-    <div class="rastros">
+    <div class="triangulos">
         <span></span>
         <span></span>
         <span></span>
@@ -53,7 +53,7 @@
             <h1 class="titulo">sobre mim</h1>
 
             <div class="conteudo">
-                <img src="imgs/perfil.jpg" alt="Foto de perfil" class="foto-perfil">
+                <div class="foto-perfil"><img src="imgs/perfil.jpg" alt="Foto de perfil" class="foto-perfil"></div>
                 <p>
                     Sou desenvolvedor em formação, com experiência prática no desenvolvimento de aplicações web, desktop
                     e
@@ -76,21 +76,6 @@
             </div>
         </section>
 
-
-        <section id="trajetoria">
-            <h1 class="titulo">trajetória do aprendizado</h1>
-
-            <div class="conteudo">
-                <img src="imgs/trajetoria.png" alt="Trajetória do aprendizado" class="trajetoria">
-                <div class="desc-aprendizado">
-                    <p>Aqui mostro um pouco de como foi minha evolução na programação, os projetos que eu desenvolvi e
-                        as
-                        tecnologias que fui aprendendo ao longo do tempo</p>
-                    <button>Conheça minha trajetória</button>
-                </div>
-            </div>
-        </section>
-
         <section id="tecnologias">
             <h1 class="titulo">tecnologias</h1>
 
@@ -108,39 +93,42 @@
                     <img src="imgs/tecnologias/supabase.webp" title="Supabase" alt="Supabase" class="tec">
                     <img src="imgs/tecnologias/firebase.webp" title="Firebase" alt="Firebase" class="tec">
                     <img src="imgs/tecnologias/vercel.webp" title="Vercel" alt="Vercel" class="tec">
+                    <img src="imgs/tecnologias/nuget.png" title="NuGet" alt="NuGet" class="tec">
                 </div>
             </div>
         </section>
 
-        <section id="projetos">
-            <h1 class="titulo">projetos</h1>
+        <section id="destaques">
+            <h1 class="titulo">destaques</h1>
+            <div class="conteudo">
+                <div id="projetos-scroll-lateral" class="projetos-scroll-lateral">
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="trajetoria">
+            <h1 class="titulo dourado">trajetória do aprendizado</h1>
 
             <div class="conteudo">
-                <div id="projetos-lista" class="projetos">
-                    <!-- <div class="projeto">
-                    <div class="projeto-conteudo">
-                        <div class="projeto-img" style="background-image: url('imgs/projetos/mathplus.webp');">
-                        </div>
-                        <h2 class="projeto-nome">MathPlus</h2>
-                        <hr>
-                        <div class="projeto-desc">Plataforma web educacional gamificada para o aprendizado de
-                            matemática, que organiza conteúdos em módulos e quizzes, registra o progresso dos alunos e
-                            utiliza XP e níveis para incentivar os estudos, com Supabase para autenticação e
-                            armazenamento dos dados.</div>
-                        <hr>
-                        <div class="projeto-tecs">
-                            <img src="imgs/tecnologias/html.webp" title="HTML" alt="HTML" class="tec">
-                            <img src="imgs/tecnologias/css.webp" title="CSS" alt="CSS" class="tec">
-                            <img src="imgs/tecnologias/js.webp" title="JavaScript" alt="JavaScript" class="tec">
-                            <img src="imgs/tecnologias/supabase.webp" title="Supabase" alt="Supabase" class="tec">
-                            <img src="imgs/tecnologias/vercel.webp" title="Vercel" alt="Vercel" class="tec">
-                        </div>
-                    </div>
-                    <p>site pc/mobile</p>
-                </div> -->
+                <img src="imgs/trajetoria.png" alt="Trajetória do aprendizado" class="trajetoria">
+                <div class="desc-aprendizado">
+                    <p>Aqui mostro um pouco de como foi minha evolução na programação, os projetos que eu desenvolvi e
+                        as
+                        tecnologias que fui aprendendo ao longo do tempo</p>
+                    <button>Conheça minha trajetória</button>
                 </div>
             </div>
         </section>
+
+        <!-- <section id="projetos">
+            <h1 class="titulo">projetos</h1>
+            <div class="conteudo">
+                <div id="projetos-lista" class="projetos">
+                   
+                </div>
+            </div>
+        </section> -->
     </main>
     <script src="scripts/script.js" type="module"></script>
 </body>

@@ -24,7 +24,8 @@
         top: 70px;
         right: 0;
         width: 100%;
-        background-color: #023147;
+        background-color: #242423;
+        box-shadow: 0px 2px 5px 0px #171616;
     }
 
     nav.ativo {
@@ -58,10 +59,14 @@
         padding: 2em;
         gap: 2em;
     }
-
-    #sobre-mim .conteudo, #trajetoria .conteudo {
+    #sobre-mim .conteudo {
+        display: grid;
+        grid-template-rows: 230px auto;
         grid-template-columns: auto;
-        align-items: center;
+        gap: 2em;
+    }
+    #trajetoria .conteudo {
+        grid-template-columns: auto;
     }
     .trajetoria{
         width: 50%;

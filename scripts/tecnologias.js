@@ -70,5 +70,11 @@ export const tecnologias = [
         nome: "Vercel",
         categoria: "Hospedagem",
         imagem: "imgs/tecnologias/vercel.webp"
+    },
+    {
+        id: 13,
+        nome: "NuGet",
+        categoria: "Gerenciador de pacotes",
+        imagem: "imgs/tecnologias/nuget.png"
     }
 ];
