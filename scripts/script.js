@@ -49,4 +49,5 @@ const nav = document.querySelector("nav");
 
 botaoMenu.addEventListener("click", () => {
     nav.classList.toggle("ativo");
+    botaoMenu.classList.toggle("ativo");
 });

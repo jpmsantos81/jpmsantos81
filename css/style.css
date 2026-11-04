@@ -38,6 +38,9 @@ header{
     background-color: white;
     border-radius: 5px;
 }
+.menu-hamburger span:not(:last-child) {
+    transition: all 0.3s ease-in-out;
+}
 nav ul{
     display: flex;
     justify-content: space-around;

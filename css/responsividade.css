@@ -31,6 +31,28 @@
         display: block;
     }
 
+    .menu-hamburger.ativo {
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    .menu-hamburger.ativo span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 1px;
+    }
+    .menu-hamburger.ativo span:nth-child(2) {
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 2px;
+    }
+    .menu-hamburger.ativo span:nth-child(3) {
+        display: none;
+    }
+
+
     nav ul {
         flex-direction: column;
         padding: 2em;
