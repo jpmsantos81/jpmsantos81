@@ -44,6 +44,14 @@
     .trajetoria{
         width: 50%;
     }
+
+    .titulo{
+        font-size: 1.9em;
+    }
+
+    .conteudo{
+        padding: 2.6em 2em;
+    }
 }
 @media (max-width: 500px) {
    

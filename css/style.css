@@ -189,9 +189,7 @@ img{
 .tec{
     width: 100%;
 }
-#projetos{
-    /* background-color: #dbc023; */
-}
+
 .projetos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 280px));
