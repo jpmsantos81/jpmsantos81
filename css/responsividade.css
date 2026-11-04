@@ -1,0 +1,50 @@
+@media (max-width: 850px) {
+    header {
+        height: 70px;
+    }
+
+    nav ul {
+        gap: 1em;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .menu-hamburger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #023147;
+    }
+
+    nav.ativo {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 2em;
+        gap: 2em;
+    }
+
+    #sobre-mim .conteudo, #trajetoria .conteudo {
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .trajetoria{
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+   
+}

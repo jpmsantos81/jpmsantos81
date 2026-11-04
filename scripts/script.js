@@ -1,5 +1,6 @@
 import { tecnologias } from "./tecnologias.js";
 import { projetosSalvos } from "./projetos.js";
+
 const projetos = document.getElementById('projetos-lista');
 pegarProjetos();
 
@@ -26,3 +27,26 @@ function pegarProjetos() {
         projetos.appendChild(card);
     });
 }
+
+
+//ativa a animação de aparecer quando o item aparece na tela a primeira vez
+const elementos = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entradas => {
+    entradas.forEach(entrada => {
+        if (entrada.isIntersecting)
+            entrada.target.classList.add("apareceu");
+    });
+});
+
+elementos.forEach(elemento => {
+    observer.observe(elemento);
+});
+
+//hamburger menu
+const botaoMenu = document.getElementById("menu-hamburger");
+const nav = document.querySelector("nav");
+
+botaoMenu.addEventListener("click", () => {
+    nav.classList.toggle("ativo");
+});

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
 
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,69 +19,104 @@
 </head>
 
 <body>
-    <section id="sobre-mim">
-        <h1 class="titulo">sobre mim</h1>
-
-        <div class="conteudo">
-            <img src="imgs/perfil.jpg" alt="Foto de perfil" class="foto-perfil">
-            <p>Sou desenvolvedor em formação e tenho experiência prática com HTML,
-                CSS, JavaScript, PHP, C#, .NET, .NET MAUI, XAML, e MySQL.
-                <br>
-                <br>
-                Já desenvolvi sites, aplicativos desktop e mobile, APIs e sistemas
-                integrados a bancos de dados. Também desenvolvi uma biblioteca própria
-                de comunicação TCP em C# para facilitar a comunicação entre aplicações
-                cliente e servidor.
-                <br>
-                <br>
-                Tenho conhecimentos em Git e GitHub e interesse em aprender novas
-                tecnologias na prática, aplicando meus conhecimentos no
-                desenvolvimento de projetos funcionais.
-            </p>
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Logo do portfólio">
         </div>
-    </section>
+        <button class="menu-hamburger" id="menu-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#projetos">Destaques</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="rastros">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main>
+        <section id="sobre-mim">
+            <h1 class="titulo">sobre mim</h1>
 
+            <div class="conteudo">
+                <img src="imgs/perfil.jpg" alt="Foto de perfil" class="foto-perfil">
+                <p>
+                    Sou desenvolvedor em formação, com experiência prática no desenvolvimento de aplicações web, desktop
+                    e
+                    mobile. Trabalho com tecnologias como HTML, CSS, JavaScript, PHP, C#, .NET, .NET MAUI, XAML e MySQL.
+                    <br>
+                    <br>
+                    Ao longo dos meus projetos, desenvolvi sites, aplicações, APIs e sistemas integrados a bancos de
+                    dados.
+                    Também criei minha própria biblioteca de comunicação TCP em C#, voltada à conexão e troca de
+                    informações
+                    entre aplicações cliente e servidor.
 
-    <section id="trajetoria">
-        <h1 class="titulo">trajetória do aprendizado</h1>
+                    <br>
+                    <br>
+                    Tenho experiência com Git e GitHub para versionamento e organização de projetos. Busco evoluir
+                    constantemente como desenvolvedor, aprofundando meus conhecimentos por meio da prática, da
+                    experimentação e da construção de soluções funcionais.
 
-        <div class="conteudo">
-            <img src="imgs/trajetoria.png" alt="Trajetória do aprendizado" class="trajetoria">
-            <div class="desc-aprendizado">
-                <p>Aqui mostro um pouco de como foi minha evolução na programação, os projetos que eu desenvolvi e as
-                    tecnologias que fui aprendendo ao longo do tempo</p>
-                <button>Conheça minha trajetória</button>
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="tecnologias">
-        <h1 class="titulo">tecnologias</h1>
 
-        <div class="conteudo">
-            <div class="tecnologias">
-                <img src="imgs/tecnologias/html.webp" title="HTML" alt="HTML" class="tec">
-                <img src="imgs/tecnologias/css.webp" title="CSS" alt="CSS" class="tec">
-                <img src="imgs/tecnologias/js.webp" title="JavaScript" alt="JavaScript" class="tec">
-                <img src="imgs/tecnologias/php.webp" title="PHP" alt="PHP" class="tec">
-                <img src="imgs/tecnologias/dotnet.webp" title=".NET" alt=".NET" class="tec">
-                <img src="imgs/tecnologias/maui.webp" title=".NET MAUI" alt=".NET MAUI" class="tec">
-                <img src="imgs/tecnologias/csharp.webp" title="C#" alt="C#" class="tec">
-                <img src="imgs/tecnologias/xaml.webp" title="XAML" alt="XAML" class="tec">
-                <img src="imgs/tecnologias/mysql.webp" title="MySQL" alt="MySQL" class="tec">
-                <img src="imgs/tecnologias/supabase.webp" title="Supabase" alt="Supabase" class="tec">
-                <img src="imgs/tecnologias/firebase.webp" title="Firebase" alt="Firebase" class="tec">
-                <img src="imgs/tecnologias/vercel.webp" title="Vercel" alt="Vercel" class="tec">
+        <section id="trajetoria">
+            <h1 class="titulo">trajetória do aprendizado</h1>
+
+            <div class="conteudo">
+                <img src="imgs/trajetoria.png" alt="Trajetória do aprendizado" class="trajetoria">
+                <div class="desc-aprendizado">
+                    <p>Aqui mostro um pouco de como foi minha evolução na programação, os projetos que eu desenvolvi e
+                        as
+                        tecnologias que fui aprendendo ao longo do tempo</p>
+                    <button>Conheça minha trajetória</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projetos">
-        <h1 class="titulo">projetos</h1>
+        <section id="tecnologias">
+            <h1 class="titulo">tecnologias</h1>
 
-        <div class="conteudo">
-            <div id="projetos-lista" class="projetos">
-                <!-- <div class="projeto">
+            <div class="conteudo">
+                <div class="tecnologias">
+                    <img src="imgs/tecnologias/html.webp" title="HTML" alt="HTML" class="tec">
+                    <img src="imgs/tecnologias/css.webp" title="CSS" alt="CSS" class="tec">
+                    <img src="imgs/tecnologias/js.webp" title="JavaScript" alt="JavaScript" class="tec">
+                    <img src="imgs/tecnologias/php.webp" title="PHP" alt="PHP" class="tec">
+                    <img src="imgs/tecnologias/dotnet.webp" title=".NET" alt=".NET" class="tec">
+                    <img src="imgs/tecnologias/maui.webp" title=".NET MAUI" alt=".NET MAUI" class="tec">
+                    <img src="imgs/tecnologias/csharp.webp" title="C#" alt="C#" class="tec">
+                    <img src="imgs/tecnologias/xaml.webp" title="XAML" alt="XAML" class="tec">
+                    <img src="imgs/tecnologias/mysql.webp" title="MySQL" alt="MySQL" class="tec">
+                    <img src="imgs/tecnologias/supabase.webp" title="Supabase" alt="Supabase" class="tec">
+                    <img src="imgs/tecnologias/firebase.webp" title="Firebase" alt="Firebase" class="tec">
+                    <img src="imgs/tecnologias/vercel.webp" title="Vercel" alt="Vercel" class="tec">
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h1 class="titulo">projetos</h1>
+
+            <div class="conteudo">
+                <div id="projetos-lista" class="projetos">
+                    <!-- <div class="projeto">
                     <div class="projeto-conteudo">
                         <div class="projeto-img" style="background-image: url('imgs/projetos/mathplus.webp');">
                         </div>
@@ -101,10 +137,11 @@
                     </div>
                     <p>site pc/mobile</p>
                 </div> -->
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <script src="scripts/script.js" type="module"></script>
 </body>
+
 </html>

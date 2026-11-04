@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,62 @@ body {
     color: #fff;
     background-color: #242327;
     width: 100%;
+}
+
+header{
+    background-color: #023147;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu-hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 65%;
+    width: auto;
+    /* object-fit: contain; */
+}
+
+main *{
+    z-index: 20;
 }
 
 .titulo {
@@ -22,7 +79,6 @@ body {
     padding-left: 1em;
     text-transform: uppercase;
 }
-
 
 p {
     font-family: "Hind Guntur", sans-serif;
@@ -51,10 +107,11 @@ p {
   font-style: normal;
 }
 section{
-    margin: 2em 0;
+    padding: 2em 0;
+    scroll-margin-top: 90px;
 }
 #sobre-mim, #trajetoria{
-    margin: 4em 2em 4em 2em;
+    padding: 2em 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,6 +145,9 @@ img{
     align-items: center;
     gap: 2em;
 }
+.trajetoria{
+    margin: 0 auto;
+}
 .desc-aprendizado{
     display: flex;
     flex-direction: column;
@@ -99,7 +159,6 @@ img{
     background-color: #101b20;
     gap: 2em;
     padding: 1em 2em;
-    margin: 2em;
 }
 .desc-aprendizado p{
     font-family: "Hind Guntur", sans-serif;
@@ -115,7 +174,7 @@ img{
     border: none;
     border-radius: 0.6em;
     cursor: pointer;
-    width: 50%;
+    
     text-transform: uppercase;
 }
 .tecnologias{
@@ -130,10 +189,12 @@ img{
 .tec{
     width: 100%;
 }
-
+#projetos{
+    /* background-color: #dbc023; */
+}
 .projetos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 280px));
     row-gap: 2em;
     column-gap: 1em;
     justify-content: space-around;
@@ -146,9 +207,21 @@ img{
     border-radius: 1em;
     overflow: hidden;
     width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
 
     display: flex;
     flex-direction: column;
+}
+.projeto:hover{
+    transform: scale(1.01) translateY(-5px) translateX(-1px);
+    transition: 0.3s;
+    box-shadow: 4px 5px 10px 10px #212120 ;
+}
+.projeto:active{
+    transform: scale(0.99) translateY(5px);
+    transition: 0.3s;
+    box-shadow: 5px -2px 15px 5px #1a1a19 ;
 }
 .projeto-conteudo{
     background-color: #101b20;
@@ -176,6 +249,9 @@ img{
     text-align: justify;
     margin: 0 1em;
     flex: 1;
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 300;
+    line-height: 1.3em;
 }
 .projeto hr{
     background-color: #023147;
@@ -206,4 +282,198 @@ img{
 }
 .projeto-plataformas{
     background-color: #023147;
+}
+
+.apareceu{
+    animation: surgir 2s ease;
+}
+@keyframes surgir {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100;
+    }
+}
+
+
+
+span.red{
+    color: rgb(213, 14, 14);
+}
+span.yellow{
+    color: rgb(227, 227, 18);
+}
+span.purple{
+    color: #c135d2;
+}
+
+
+.bolinhas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bolinha {
+    position: absolute;
+    z-index: 0;
+    top: -50px;
+    width: 15px;
+    height: 15px;
+    background: #8b5cf6;
+    border-radius: 50%;
+    animation: cair linear infinite;
+}
+
+@keyframes cair {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+/* Posições e velocidades */
+.bolinha:nth-child(1) {
+    left: 10%;
+    animation-duration: 5s;
+}
+
+.bolinha:nth-child(2) {
+    left: 25%;
+    animation-duration: 7s;
+    width: 10px;
+    height: 10px;
+}
+
+.bolinha:nth-child(3) {
+    left: 40%;
+    animation-duration: 4s;
+    width: 22px;
+    height: 22px;
+}
+
+.bolinha:nth-child(4) {
+    left: 55%;
+    animation-duration: 6s;
+}
+
+.bolinha:nth-child(5) {
+    left: 70%;
+    animation-duration: 8s;
+    width: 12px;
+    height: 12px;
+}
+
+.bolinha:nth-child(6) {
+    left: 85%;
+    animation-duration: 5s;
+    width: 20px;
+    height: 20px;
+}
+
+.bolinha:nth-child(7) {
+    left: 95%;
+    animation-duration: 9s;
+    width: 8px;
+    height: 8px;
+}
+
+/* Bolinhas com rastros */
+.rastros {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.rastros span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fddb5d;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #d4bf01;
+    animation: diagonal 6s linear infinite;
+}
+
+
+.rastros span:nth-child(1) {
+    left: 5%;
+    top: 10%;
+    animation-duration: 5s;
+}
+
+.rastros span:nth-child(2) {
+    left: 25%;
+    top: 30%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.rastros span:nth-child(3) {
+    left: 45%;
+    top: 5%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.rastros span:nth-child(4) {
+    left: 65%;
+    top: 40%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.rastros span:nth-child(5) {
+    left: 80%;
+    top: 15%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.rastros span:nth-child(6) {
+    left: 15%;
+    top: 70%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.rastros span:nth-child(7) {
+    left: 70%;
+    top: 80%;
+    animation-duration: 6s;
+    animation-delay: 4s;
+}
+
+@keyframes diagonal {
+    0% {
+        transform: translate(-100px, -100px);
+        opacity: 0;
+        box-shadow: 0 0 5px #f57c11;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(500px, 500px);
+        opacity: 0;
+        box-shadow:
+            -100px -100px 20px rgba(246, 190, 92, 0.4),
+            -200px -200px 30px rgba(246, 208, 92, 0.2);
+    }
 }
