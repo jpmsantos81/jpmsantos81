@@ -24,14 +24,14 @@
 body {
     font-family: "Poppins", sans-serif;
     color: #fff;
-    background-color: #242327;
+    background-color: #121213;
     width: 100%;
 }
 
 header{
-    background-color: #242423;
+    background-color: #191919;
     position: sticky;
-    box-shadow: 0px 2px 5px 0px #171616;
+    box-shadow: 0px 2px 5px 0px #0b0b0b;
     top: 0;
     z-index: 100;
     display: flex;
@@ -67,7 +67,7 @@ nav ul{
 }
 nav ul li a{
     text-decoration: none;
-    color: #eaed25;
+    color: #e9e93d;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -267,7 +267,7 @@ img{
     scroll-snap-align: start;
     transition: all 0.3s ease;
     cursor: pointer;
-
+    margin: 0 auto;
     -webkit-tap-highlight-color: transparent;
     display: flex;
     flex-direction: column;
@@ -275,12 +275,12 @@ img{
 .projeto:hover{
     transform: scale(1.01) translateY(-5px) translateX(-1px);
     transition: 0.3s;
-    box-shadow: 4px 5px 10px 10px #212120 ;
+    box-shadow: 4px 5px 10px 10px #0e0e0e ;
 }
 .projeto:active{
     transform: scale(0.99) translateY(5px);
     transition: 0.3s;
-    box-shadow: 5px -2px 15px 5px #1a1a19 ;
+    box-shadow: 5px -2px 15px 5px #121212 ;
 }
 .projeto-conteudo{
     background-color: #101b20;
