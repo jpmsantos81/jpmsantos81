@@ -13,9 +13,10 @@
 }
 
 @media (max-width: 850px) {
-    header{
+    header {
         box-shadow: none;
     }
+
     .menu-hamburger {
         display: flex;
     }
@@ -29,7 +30,7 @@
         background-color: #191919d8;
         box-shadow: 0px 2px 2px 0px #0b0b0b;
     }
-    
+
     nav.ativo {
         display: block;
     }
@@ -41,16 +42,19 @@
         top: 0;
         z-index: 1000;
     }
+
     .menu-hamburger.ativo span:nth-child(1) {
         transform: rotate(45deg);
         position: relative;
         top: 1px;
     }
+
     .menu-hamburger.ativo span:nth-child(2) {
         transform: rotate(-45deg);
         position: relative;
         bottom: 2px;
     }
+
     .menu-hamburger.ativo span:nth-child(3) {
         display: none;
     }
@@ -61,27 +65,33 @@
         padding: 2em;
         gap: 2em;
     }
+
     #sobre-mim .conteudo {
         display: grid;
         grid-template-rows: 230px auto;
         grid-template-columns: auto;
         gap: 2em;
     }
+
+    .projetos-scroll-lateral::-webkit-scrollbar-thumb {
+        background: rgb(45, 44, 42);
+    }
+
     #trajetoria .conteudo {
         grid-template-columns: auto;
     }
-    .trajetoria{
+
+    .trajetoria {
         width: 50%;
     }
 
-    .titulo{
+    .titulo {
         font-size: 1.9em;
     }
 
-    .conteudo{
+    .conteudo {
         padding: 2.6em 2em;
     }
 }
-@media (max-width: 500px) {
-   
-}
+
+@media (max-width: 500px) {}

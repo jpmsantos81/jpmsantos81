@@ -20,16 +20,21 @@ function pegarProjetos() {
                         <div class="projeto-desc">${projeto.desc}</div>
                         <hr>
                         <div class="projeto-tecs">
-                            ${projeto.tecs.map(id => {
-                                const tec = tecnologias.find(t => t.id === id);
-                                return `<img src="${tec.imagem}" title="${tec.nome}" alt="${tec.nome}" class="tec">`;
-                            }).join('')}
+                            ${renderizarTecnologias(projeto.tecs)}
                         </div>
                     </div>
                     <p>${projeto.plataformas}</p>`;
         projetos.appendChild(card);
     });
 }
+
+function renderizarTecnologias(nomes) {
+    return nomes
+        .map(nome => tecnologias.find(tec => tec.nomes.some(nomeTec => nomeTec.toLowerCase() === nome.toLowerCase())))
+        .map(tec => `<img src="${tec.imagem}" title="${tec.nomes[0]}" alt="${tec.nomes[0]}" class="tec">`)
+        .join('');
+}
+
 function pegarDestaques() {
     projetosSalvos.forEach(projeto => {
         if (!projeto.destaque) return;
@@ -45,10 +50,7 @@ function pegarDestaques() {
                         <div class="projeto-desc">${projeto.desc}</div>
                         <hr>
                         <div class="projeto-tecs">
-                            ${projeto.tecs.map(id => {
-                                const tec = tecnologias.find(t => t.id === id);
-                                return `<img src="${tec.imagem}" title="${tec.nome}" alt="${tec.nome}" class="tec">`;
-                            }).join('')}
+                            ${renderizarTecnologias(projeto.tecs)}
                         </div>
                     </div>
                     <p>${projeto.plataformas}</p>`;
